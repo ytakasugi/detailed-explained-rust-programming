@@ -1,0 +1,57 @@
+n: 25
+Memory Location: 0x7ffdc487626f
+size_of::<u8>(): 1 byte
+size_of_val(&n): 1 byte
+---------------------------------------------------------------
+n_ptr: 0x7ffdc487626f
+Memory Location: 0x7ffdc4876270
+size_of::<*const u8>(): 8 byte
+size_of_val(&n_ptr): 8 byte
+---------------------------------------------------------------
+m: 25
+Memory Location: 0x561919cc0ad0
+size_of::<Box<u8>>(): 8 byte
+size_of_val(&m): 8 byte
+---------------------------------------------------------------
+array: [99, 97, 114, 114, 121, 116, 111, 119, 101, 108]
+length: 10
+Memory Location: 0x7ffdc4876286
+size_of::<[u8; 10]>(): 10 byte
+size_of_val(&array): 10 byte
+---------------------------------------------------------------
+slice: [99, 97, 114, 114, 121, 116, 111, 119, 101, 108]
+length: 10
+Memory Location: 0x7ffdc4876290
+referent: 0x7ffdc4876286
+size_of::<&[u8]>(): 16 byte
+size_of_val(slice): 10 byte
+size_of_val(&slice): 8 byte
+---------------------------------------------------------------
+slice_box: [99, 97, 114, 114, 121, 116, 111, 119, 101, 108]
+length: 10
+Memory Location: 0x7ffdc4876298
+referent: 0x561919cc0af0
+size_of::<Box<[u8]>>(): 16 byte
+size_of_val(&slice_box): 16 byte
+---------------------------------------------------------------
+v: [99, 97, 114, 114, 121, 116, 111, 119, 101, 108]
+length: 10
+capacity: 10
+Memory Location: 0x7ffdc48762b8
+size_of::<Vec<u8>>(): 24 byte
+size_of_val(&v): 24 byte
+---------------------------------------------------------------
+s: "Alice"
+length: 5
+capacity: 5
+Memory Location: 0x7ffdc48762d0
+size_of::<String>(): 24 byte
+size_of_val(&s): 24 byte
+---------------------------------------------------------------
+str: "Alice"
+length: 5
+Memory Location: 0x7ffdc48762e8
+referent: 0x5619190d3000
+size_of::<&str>(): 16 byte
+size_of_val(str): 5 byte
+size_of_val(&str): 16 byte
